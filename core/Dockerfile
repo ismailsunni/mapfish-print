@@ -1,7 +1,7 @@
 FROM mapfish_print_builder AS builder
 
 
-FROM camptocamp/tomcat-logback:8.5-jre8 AS runner
+FROM camptocamp/tomcat-logback:10.0-jre11 AS runner
 LABEL maintainer="info@camptocamp.com"
 
 RUN \

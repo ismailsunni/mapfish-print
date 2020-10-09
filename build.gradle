@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:2.0.0"
+//        classpath "com.github.spotbugs:spotbugs-gradle-plugin:3.0.0"
         classpath "se.bjurr.violations:violations-gradle-plugin:1.47"
         classpath 'org.owasp:dependency-check-gradle:6.0.2'
     }
@@ -26,7 +26,7 @@ allprojects {
     version = '3.25.0'
     ext.junitVersion = "4.13"
     ext.groovyVersion = "3.0.6"
-    ext.spotbugVersion = '3.1.12'
+//    ext.spotbugVersion = '4.1.3'
     ext.jasperreportVersion = "6.15.0"
 
     apply plugin: 'org.owasp.dependencycheck'
@@ -57,7 +57,7 @@ configure(subprojects.findAll { ['core', 'examples', 'docs'].contains(it.name) }
 }
 configure(subprojects.findAll { ['core', 'examples'].contains(it.name) }) {
     apply plugin: 'java'
-    apply plugin: 'com.github.spotbugs'
+//    apply plugin: 'com.github.spotbugs'
     apply plugin: 'eclipse'
     apply plugin: 'idea'
     apply plugin: 'project-report'
@@ -75,14 +75,14 @@ configure(subprojects.findAll { ['core', 'examples'].contains(it.name) }) {
     }
     checkstyleTest.enabled = false
 
-    spotbugs {
+/*    spotbugs {
         toolVersion = "${project.spotbugVersion}"
         ignoreFailures = true
         reportsDir = file("$project.buildDir/reports/spotbugsReports")
         effort = "max"
         reportLevel = "high"
     }
-    spotbugsTest.enabled = false
+    spotbugsTest.enabled = false*/
 
     task violations(type: se.bjurr.violations.gradle.plugin.ViolationsTask) {
         minSeverity = 'INFO'
@@ -90,7 +90,7 @@ configure(subprojects.findAll { ['core', 'examples'].contains(it.name) }) {
         maxViolations = 0
         printViolations = true
         violations = [
-                ["FINDBUGS", ".", ".*/reports/spotbugsReports/.*\\.xml", "Spotbugs"],
+//                ["FINDBUGS", ".", ".*/reports/spotbugsReports/.*\\.xml", "Spotbugs"],
                 ["CHECKSTYLE", ".", ".*/reports/checkstyleReports/.*\\.xml", "Checkstyle"]
         ]
     }

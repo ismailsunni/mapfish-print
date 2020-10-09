@@ -4,6 +4,7 @@
 
 - The allowTransparency property is renamed to pdfA. It is now also possible to pass that value
   at impression time.
+- Upgrade to Java 11 and Tomcat 10.0
 
 ## Version 3.24
 
