@@ -29,7 +29,7 @@ templates:
       inputMapper: {}
       attributes:
         scalebar: !scalebar
-          width: 240
+          width: 242
           height: 40
       processors:
         - !createMap {}

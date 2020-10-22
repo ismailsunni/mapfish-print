@@ -56,7 +56,7 @@
 				<subreportExpression><![CDATA[$P{mapSubReport}]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement x="540" y="341" width="240" height="40" uuid="fa145068-76a5-4834-98ed-ce65b1976b3d"/>
+				<reportElement x="540" y="341" width="242" height="40" uuid="fa145068-76a5-4834-98ed-ce65b1976b3d"/>
 				<subreportExpression><![CDATA[$P{scalebarSubReport}]]></subreportExpression>
 			</subreport>
 			<textField>
