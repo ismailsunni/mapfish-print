@@ -7,17 +7,15 @@
       "dpi": 72,
       "rotation": 0,
       "bbox": [
-        3.8,
-        40.9,
-        27.4,
-        55.0
+        12.7,37.4, 36.4,50.9
       ],
       "longitudeFirst": true,
       "layers": [
         {
           "type": "WMS",
           "layers": [
-            "countries"
+            "countries",
+            "countries_centroid"
           ],
           "baseURL": "http://localhost:8380/wms",
           "imageFormat": "image/png",
