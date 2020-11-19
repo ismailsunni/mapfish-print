@@ -1,5 +1,5 @@
 {
-  "layout": "A4 landscape",
+  "layout": "A0 landscape",
   "outputFormat": "pdf",
   "attributes": {
     "map": {
@@ -7,7 +7,7 @@
       "dpi": 72,
       "rotation": 0,
       "bbox": [
-        12.7,37.4, 36.4,50.9
+        -24.2,20.8, 70.3,74.6
       ],
       "longitudeFirst": true,
       "layers": [
