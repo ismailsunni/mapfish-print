@@ -6,9 +6,8 @@
       "projection": "EPSG:4326",
       "dpi": 72,
       "rotation": 0,
-      "bbox": [
-        -24.2,20.8, 70.3,74.6
-      ],
+      "center": [18, 46],
+      "scale": 7217512,
       "longitudeFirst": true,
       "layers": [
         {
@@ -22,7 +21,7 @@
           "version": "1.1.1",
           "customParams": {
             "TRANSPARENT": "true",
-            "EXCEPTIONS": "INIMAGE"
+            "TILED": "true"
           }
         }
       ]
